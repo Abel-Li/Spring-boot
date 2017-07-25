@@ -16,14 +16,14 @@ import org.springframework.transaction.PlatformTransactionManager;
  
 import javax.sql.DataSource;
  
-@EnableAutoConfiguration
+@EnableAutoConfiguration  // 启注解事务管理，等同于xml配置方式的 <tx:annotation-driven />
 @SpringBootApplication
 @ComponentScan
 @MapperScan("com.lyc.dao")
 public class Demo {
     private static Logger logger = Logger.getLogger(Demo.class);
  
-    //DataSource配置
+    //DataSource配置,指定jdbc处理事务
     @Bean
     @ConfigurationProperties(prefix="spring.datasource")
     public DataSource dataSource() {
