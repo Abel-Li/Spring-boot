@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.*;
 @EnableAutoConfiguration  //自动配置注解
 public class SampleController {
 
-//    @RequestMapping("/")
-//    @ResponseBody
-//    String home() {
-//        return "Hello World!";
-//    }
-//
-//    public static void main(String[] args) throws Exception {
-//        SpringApplication.run(SampleController.class, args);
-//    }
+    @RequestMapping("/")
+    @ResponseBody
+    String home() {
+        return "Hello World!";
+    }
+
+    public static void main(String[] args) throws Exception {
+        SpringApplication.run(SampleController.class, args);
+    }
 }

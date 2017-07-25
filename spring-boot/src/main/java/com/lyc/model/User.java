@@ -1,25 +1,25 @@
 package com.lyc.model;
 
 public class User {
-//	public int id;
+	public int id;
 	public String name;
 	public Integer age;
 //	public String password;
 	
-	public User(String name, int age) {
-		super();
+//	public User(String name, int age, int id) {
+//		super();
 //		this.id = id;
-		this.name = name;
-		this.age = age;
-//		this.password = password;
-	}
+//		this.name = name;
+//		this.age = age;
+////		this.password = password;
+//	}
 	
-//	public int getId() {
-//		return id;
-//	}
-//	public void setId(int id) {
-//		this.id = id;
-//	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getName() {
 		return name;
 	}

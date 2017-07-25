@@ -3,11 +3,11 @@
 <mapper namespace="com.lyc.dao.UserMapperDao">
  
   <select id="getAllUserInfo" resultType="com.lyc.model.User">
-    select name, age,password from user;
+    select id, name, age from user;
   </select>
   
   <select id="findUserInfo" resultType="com.lyc.model.User">
-    select name, age,password from user where age = #{couponNo};
+    select name, age from user where age = #{couponNo};
   </select>
  
 </mapper>
