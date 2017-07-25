@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lyc.dao.UserMapperDao">
+ 
+  <select id="getAllUserInfo" resultType="com.lyc.model.User">
+    select name, age,password from user;
+  </select>
+  
+  <select id="findUserInfo" resultType="com.lyc.model.User">
+    select name, age,password from user where age = #{couponNo};
+  </select>
+ 
+</mapper>
